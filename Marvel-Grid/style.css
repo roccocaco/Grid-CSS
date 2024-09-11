@@ -1,42 +1,50 @@
+/* Define a estrutura de grid para o container dos personagens */
 .container {
-    display: grid;
-    grid-template-columns: 180px 180px 180px 180px 180px 180px;
-    gap: 10px;
-    justify-content: center;
+    display: grid; /* Usa o layout de grid */
+    grid-template-columns: 180px 180px 180px 180px 180px 180px; /* Cria 6 colunas de 180px */
+    gap: 10px; /* Espaço de 10px entre os itens do grid */
+    justify-content: center; /* Centraliza o grid horizontalmente dentro do container */
 }
 
+/* Define o tamanho das imagens dentro do grid */
 img {
-    width: 180px;
+    width: 180px; /* Define a largura da imagem para 180px */
 }
 
+/* Estiliza os blocos dos personagens */
 .personagem {
-    background-color: black;
+    background-color: black; /* Define a cor de fundo como preto */
 }
 
+/* Centraliza o título principal */
 h1 {
-    text-align: center;
+    text-align: center; /* Alinha o texto do título ao centro */
 }
 
-h4{
-    color: white;
-    margin-left: 25px;    
+/* Estiliza os subtítulos dos personagens */
+h4 {
+    color: white; /* Define a cor do texto como branco */
+    margin-left: 25px; /* Adiciona uma margem à esquerda de 25px */
 }
 
-p{
-    color: gainsboro;
-    margin-left: 25px;
+/* Estiliza a descrição dos personagens */
+p {
+    color: gainsboro; /* Define a cor do texto como cinza claro */
+    margin-left: 25px; /* Adiciona uma margem à esquerda de 25px */
 }
 
+/* Define estilos para telas menores que 1300px de largura */
 @media screen and (max-width: 1300px) {
     .container {
-        display: grid;
-        grid-template-columns: 180px 180px 180px 180px;
+        display: grid; /* Mantém o layout de grid */
+        grid-template-columns: 180px 180px 180px 180px; /* Cria 4 colunas de 180px */
     }
 }
 
+/* Define estilos para telas menores que 780px de largura */
 @media screen and (max-width: 780px) {
     .container {
-        display: grid;
-        grid-template-columns: 180px 180px;
+        display: grid; /* Mantém o layout de grid */
+        grid-template-columns: 180px 180px; /* Cria 2 colunas de 180px */
     }
 }
